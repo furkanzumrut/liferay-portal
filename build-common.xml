@@ -445,19 +445,7 @@ Error-Prone was automatically installed. Please rerun your task.
 		</else>
 	</if>
 
-	<if>
-		<not>
-			<isset property="env.ANT_OPTS" />
-		</not>
-		<then>
-			<fail>
-.
 
-Please set the environment variable ANT_OPTS to the recommended value of
-"-Xmx1024m -XX:MaxPermSize=512m".
-			</fail>
-		</then>
-	</if>
 
 	<if>
 		<and>
